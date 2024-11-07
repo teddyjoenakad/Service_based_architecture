@@ -1,0 +1,189 @@
+openapi: 3.0.0
+info:
+  description: This API receives events from parking meters in downtown Vancouver
+  version: "1.0.0"
+  title: Vancouver Parking Monitoring API
+  contact:
+    email: tnakad@my.bcit.ca
+paths:
+  /parking:
+    get:
+      summary: Retrieves a list of parking status events
+      operationId: app.get_parking_status
+      description: Returns a list of parking status events
+      parameters:
+        - name: index
+          in: query
+          description: The specific index of the payment event
+          required: true
+          schema:
+            type: integer
+            example: 0
+      responses:
+        '200':
+          description: Successfully returned a list of parking status events
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/ParkingStatusEvent'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Invalid request message
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Not Found
+
+  /payment:
+    get:
+      summary: Retrieves a list of payment events
+      operationId: app.get_payment_events
+      description: Returns a list of payment events
+      parameters:
+        - name: index
+          in: query
+          description: The specific index of the payment event
+          required: true
+          schema:
+            type: integer
+            example: 0
+      responses:
+        '200':
+          description: Successfully returned a list of payment events
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/PaymentEvent'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Invalid request message
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Not Found
+
+  /stats:
+    get:
+      summary: Retrieves event statistics
+      operationId: app.get_event_stats
+      description: Returns the statistics for parking and payment events
+      responses:
+        '200':
+          description: Successfully returned event statistics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventStats'
+
+
+components:
+  schemas:
+    ParkingStatusEvent:
+      type: object
+      required:
+        - meter_id
+        - device_id
+        - status
+        - timestamp
+        - spot_number
+        - trace_id
+      properties:
+        meter_id:
+          type: integer
+          example: 240560
+        device_id:
+          type: string
+          format: uuid
+          description: Unique identifier of the meter or sensor
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        status:
+          type: boolean
+          description: true = free, false = occupied
+          example: true
+        timestamp:
+          type: string
+          format: date-time
+          example: '2024-08-29T09:12:00Z'
+        spot_number:
+          type: integer
+          example: 25
+        trace_id:
+          type: string
+          example: '123e4567-e89b-12d3-a456-426614174000'
+
+    PaymentEvent:
+      type: object
+      required:
+        - meter_id
+        - device_id
+        - amount
+        - timestamp
+        - duration
+        - trace_id
+      properties:
+        meter_id:
+          type: integer
+          example: 12345
+        device_id:
+          type: string
+          format: uuid
+          description: Unique identifier of the meter or sensor
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        amount:
+          type: number
+          format: float
+          example: 2.75
+        timestamp:
+          type: string
+          format: date-time
+          example: '2024-08-29T12:09:33Z'
+        duration:
+          type: integer
+          description: Duration of parking in minutes
+          example: 60
+        trace_id:
+          type: string
+          example: '123e4567-e89b-12d3-a456-426614174000'
+
+    EventStats:
+      type: object
+      required:
+        - num_parking_events
+        - num_payment_events
+      properties:
+        num_parking_events:
+          type: integer
+          example: 150
+          description: Total number of parking events
+        num_payment_events:
+          type: integer
+          example: 75
+          description: Total number of payment events

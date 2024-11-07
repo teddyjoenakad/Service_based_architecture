@@ -1,0 +1,114 @@
+openapi: 3.0.0
+info:
+  description: This API receives events from parking meters in downtown Vancouver
+  version: "1.0.0"
+  title: Vancouver Parking Monitoring API
+  contact:
+    email: tnakad@my.bcit.ca
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: parking_meters
+    description: Operations related to parking meters
+
+paths:
+  /parking:
+    post:
+      tags:
+        - parking_meters
+      summary: Reports the status of a parking spot (free or occupied)
+      operationId: app.parking_status
+      description: Adds a new parking status event to the system
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ParkingStatusEvent'
+      responses:
+        '201':
+          description: event created
+        '400':
+          description: 'invalid input, object invalid'
+        '409':
+          description: an existing event already exists
+
+  /payment:
+    post:
+      tags:
+        - parking_meters
+      summary: Reports a payment for a parking spot
+      operationId: app.payment
+      description: Adds a new payment event to the system
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentEvent'
+      responses:
+        '201':
+          description: event created
+        '400':
+          description: 'invalid input, object invalid'
+        '409':
+          description: an existing event already exists
+
+components:
+  schemas:
+    ParkingStatusEvent:
+      type: object
+      required:
+        - meter_id
+        - device_id
+        - status
+        - timestamp
+        - spot_number
+      properties:
+        meter_id:
+          type: integer
+          example: 240560
+        device_id:
+          type: string
+          format: uuid
+          description: Unique identifier of the meter or sensor
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851        
+        status:
+          type: boolean
+          description: true = free, false = occupied
+          example: true
+        timestamp:
+          type: string
+          format: date-time
+          example: '2024-08-29T09:12:00Z'
+        spot_number:
+          type: integer
+          example: 25
+
+    PaymentEvent:
+      required:
+        - meter_id
+        - device_id
+        - amount
+        - timestamp
+        - duration
+      properties:
+        meter_id:
+          type: integer
+          example: 12345
+        device_id:
+          type: string
+          format: uuid
+          description: Unique identifier of the meter or sensor
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        amount:
+          type: number
+          format: float
+          example: 2.75
+        timestamp:
+          type: string
+          format: date-time
+          example: '2024-08-29T12:09:33Z'
+        duration:
+          type: integer
+          description: Duration of parking in minutes
+          example: 60

@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  description: This API provides statistics on parking events
+  version: "1.0.0"
+  title: Vancouver Parking Monitoring Stats API
+  contact:
+    email: tnakad@my.bcit.ca
+paths:
+  /parking/stats:
+    get:
+      summary: Gets the parking event statistics
+      operationId: app.get_stats
+      description: Gets processed statistics for parking status and payment events
+      responses:
+        '200':
+          description: Successfully returned a list of parking event statistics
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stats:
+                    $ref: '#/components/schemas/ParkingStats'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Invalid request message
+components:
+  schemas:
+    ParkingStats:
+      required:
+        - total_status_events
+        - total_payment_events
+        - most_frequent_meter
+        - highest_payment
+      properties:
+        total_status_events:
+          type: integer
+          example: 200
+          description: Total number of parking status events
+        total_payment_events:
+          type: integer
+          example: 150
+          description: Total number of payment events
+        most_frequent_meter:
+          type: integer
+          example: 240560
+          description: The meter ID with the highest activity
+        highest_payment:
+          type: number
+          format: float
+          example: 20.50
+          description: The highest recorded payment amount
