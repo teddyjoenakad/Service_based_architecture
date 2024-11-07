@@ -1,0 +1,8 @@
+connexion==3.1.0
+swagger-ui-bundle==1.1.0
+pykafka==2.8.0
+SQLAlchemy==2.0.30
+mysql-connector-python==9.0.0
+PyMySQL==1.1.1
+connexion[flask]==3.1.0
+connexion[uvicorn]==3.1.0
