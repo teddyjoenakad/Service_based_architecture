@@ -42,7 +42,7 @@ export default function AppStats() {
 							<td># Parking: {stats['parking']}</td>
 							<td># Payment: {stats['payment']}</td>
 						</tr>
-						<tr>
+						{/* <tr>
 							<td colspan="2">Max BP Systolic: {stats['max_bp_sys_reading']}</td>
 						</tr>
 						<tr>
@@ -50,7 +50,7 @@ export default function AppStats() {
 						</tr>
 						<tr>
 							<td colspan="2">Max HR: {stats['max_bp_sys_reading']}</td>
-						</tr>
+						</tr> */}
 					</tbody>
                 </table>
                 <h3>Last Updated: {stats['last_updated']}</h3>
