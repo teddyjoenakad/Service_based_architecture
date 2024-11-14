@@ -43,13 +43,10 @@ export default function AppStats() {
 							<td># Payment: {stats['payment']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max BP Systolic: {stats['parking']}</td>
+							<td colspan="2">Highest payment: {stats['payment']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max BR Diastolic: {stats['payment']}</td>
-						</tr>
-						<tr>
-							<td colspan="2">Max HR: {stats['parking']}</td>
+							<td colspan="2">Most frequent meter: {stats['parking']}</td>
 						</tr>
 					</tbody>
                 </table>
