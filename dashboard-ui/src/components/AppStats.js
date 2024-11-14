@@ -40,14 +40,14 @@ export default function AppStats() {
 							<th>Payment</th>
 						</tr>
 						<tr>
-							<td># Parking: {stats['parking']}</td>
-							<td># Payment: {stats['payment']}</td>
+							<td># Parking: {stats['total_status_events']}</td>
+							<td># Payment: {stats['total_payment_events']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Highest payment: {stats['payment']}</td>
+							<td colspan="2">Highest payment: {stats['highest_payment']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Most frequent meter: {stats['parking']}</td>
+							<td colspan="2">Most frequent meter: {stats['most_frequent_meter']}</td>
 						</tr>
 					</tbody>
                 </table>
