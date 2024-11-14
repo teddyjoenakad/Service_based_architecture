@@ -12,6 +12,7 @@ export default function AppStats() {
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Stats")
+                console.log(result)
                 setStats(result);
                 setIsLoaded(true);
             },(error) =>{
