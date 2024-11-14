@@ -19,7 +19,6 @@ with open('log_conf.yml', 'r') as f2:
     logging.config.dictConfig(log_config)
 logger = logging.getLogger('basicLogger')
 
-
 def get_parking_status(index):
     """Get Parking Status Event in History"""
     hostname = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
@@ -97,14 +96,16 @@ def get_event_stats():
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 
-app.add_middleware(
-    CORSMiddleware,
-    position=MiddlewarePosition.BEFORE_EXCEPTION,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+with app.app_context():
+
+    app.add_middleware(
+        CORSMiddleware,
+        position=MiddlewarePosition.BEFORE_EXCEPTION,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
 if __name__ == "__main__":
     app.run(port=8110, host="0.0.0.0")
