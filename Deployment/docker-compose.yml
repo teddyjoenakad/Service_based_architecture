@@ -7,7 +7,7 @@ services:
       - "2181"
     hostname: zookeeper
     volumes:
-      - /home/<username>/zookeeper/data:/opt/zookeeper-3.4.13/data
+      - /home/azureuser/zookeeper/data:/opt/zookeeper-3.4.13/data
 
 # kafka
   kafka:
@@ -28,7 +28,7 @@ services:
       KAFKA_BROKER_ID: 1
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /home/<username>/kafka:/kafka/kafka-logs
+      - /home/azureuser/kafka:/kafka/kafka-logs
     depends_on:
       - "zookeeper"
 # mysql

@@ -8,6 +8,7 @@ import logging
 import logging.config
 import uuid
 from pykafka import KafkaClient
+import time
 
 
 with open('app_conf.yml', 'r') as f:
@@ -18,6 +19,21 @@ with open('log_conf.yml', 'r') as f2:
     logging.config.dictConfig(log_config)
 logger = logging.getLogger('basicLogger')
 
+# connecting kafka
+max_retries = 5
+retry_count = 0
+
+while retry_count < max_retries:
+    try:
+        client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
+        topic = client.topics[str.encode(app_config['events']['topic'])]
+        producer = topic.get_sync_producer()
+        logger.info(f"Succesfully connected to Kafka")
+        break
+    except Exception as e:
+        logger.error(f"Failed to connect to Kafka: {e} | Retrying in 5 seconds...")
+        time.sleep(5)
+        retry_count += 1
 
 def log_data(event, event_type):
     header = {"Content-Type": "application/json"}
@@ -26,10 +42,6 @@ def log_data(event, event_type):
     event["trace_id"] = trace_id
 
     logger.info(f'Received event {event_type} request with a trace id of {trace_id}')
-
-    client = KafkaClient(hosts=f"{app_config['events']['hostname']}:{app_config['events']['port']}")
-    topic = client.topics[str.encode(app_config['events']['topic'])]
-    producer = topic.get_sync_producer()
     
     msg = {
         "type": event_type,

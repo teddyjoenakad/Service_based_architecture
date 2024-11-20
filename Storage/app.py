@@ -14,6 +14,7 @@ import json
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
 from threading import Thread
+import time
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
@@ -29,7 +30,7 @@ hostname = app_config['datastore']['hostname']
 port = app_config['datastore']['port']
 db = app_config['datastore']['db']
 
-DB_ENGINE = create_engine(f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}')
+DB_ENGINE = create_engine(f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}', pool_size=0, pool_recycle=-1, pool_pre_ping=True)
 # print(DB_ENGINE)
 Base.metadata.bind = DB_ENGINE
 DB_SESSION = sessionmaker(bind=DB_ENGINE)
@@ -71,8 +72,20 @@ def get_payment_events(start_timestamp, end_timestamp):
 def process_messages():
     """ Process event messages """
     hostname = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
-    client = KafkaClient(hosts=hostname)
-    topic = client.topics[str.encode(app_config["events"]["topic"])]
+
+    max_retries = 5
+    retry_count = 0
+
+    while retry_count < max_retries:
+        try:
+            client = KafkaClient(hosts=hostname)
+            topic = client.topics[str.encode(app_config["events"]["topic"])]
+            logger.info(f"Succesfully connected to Kafka")
+            break
+        except Exception as e:
+            logger.error(f"Failed to connect to Kafka: {e} | Retrying in 10 seconds...")
+            time.sleep(5)
+            retry_count += 1        
 
     consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False, auto_offset_reset=OffsetType.LATEST)
 
