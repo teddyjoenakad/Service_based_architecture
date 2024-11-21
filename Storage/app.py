@@ -110,7 +110,7 @@ def process_messages():
                     timestamp=payload['timestamp'],
                     trace_id=payload['trace_id']
                 )
-                
+
                 session.add(ps)
                 session.commit()
                 session.close()

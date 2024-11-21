@@ -10,7 +10,7 @@ export default function EndpointAnalyzer(props) {
     
 
     const getAnalyzer = () => {
-        fetch(`http://acit3855-kafka2.westus.cloudapp.azure.com:8110/${props.endpoint}?index=0`)
+        fetch(`http://acit3855-kafka2.westus.cloudapp.azure.com:8110/${props.endpoint}?index=${index}`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Analyzer Results for " + props.endpoint)
