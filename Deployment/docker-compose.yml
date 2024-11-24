@@ -57,7 +57,6 @@ services:
     volumes:
       - /home/azureuser/config/receiver:/config
       - /home/azureuser/logs:/logs
-      - processing-db:/data
     depends_on:
       - "kafka"
 
@@ -86,7 +85,6 @@ services:
     volumes:
       - /home/azureuser/config/analyzer:/config
       - /home/azureuser/logs:/logs
-      - processing-db:/data
     depends_on:
       - "kafka"
 
@@ -100,7 +98,6 @@ services:
     volumes:
       - /home/azureuser/config/storage:/config
       - /home/azureuser/logs:/logs
-      - processing-db:/data
     depends_on:
       - "kafka"
 
