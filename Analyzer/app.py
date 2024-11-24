@@ -10,6 +10,16 @@ from threading import Thread
 from connexion import FlaskApp
 from connexion.middleware import MiddlewarePosition
 from starlette.middleware.cors import CORSMiddleware
+import os
+
+if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
+    print("In Test Environment")
+    app_conf_file = "/config/app_conf.yml"
+    log_conf_file = "/config/log_conf.yml"
+else:
+    print("In Dev Environment")
+    app_conf_file = "app_conf.yml"
+    log_conf_file = "log_conf.yml"
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
@@ -17,7 +27,11 @@ with open('app_conf.yml', 'r') as f:
 with open('log_conf.yml', 'r') as f2:
     log_config = yaml.safe_load(f2.read())
     logging.config.dictConfig(log_config)
+
 logger = logging.getLogger('basicLogger')
+
+logger.info("App Conf File: %s" % app_conf_file)
+logger.info("Log Conf File: %s" % log_conf_file)
 
 def get_parking_status(index):
     """Get Parking Status Event in History"""
