@@ -23,10 +23,10 @@ else:
     app_conf_file = "app_conf.yml"
     log_conf_file = "log_conf.yml"
 
-with open('app_conf.yml', 'r') as f:
+with open(app_conf_file, 'r') as f:
     app_config = yaml.safe_load(f.read())
 
-with open('log_conf.yml', 'r') as f2:
+with open(log_conf_file, 'r') as f2:
     log_config = yaml.safe_load(f2.read())
     logging.config.dictConfig(log_config)
 
@@ -46,14 +46,15 @@ def populate_stats():
         with open(EVENT_FILE, 'r') as f3:
             stats = json.load(f3)
     else:
-        # Default values if the file doesn't exist
-        stats = {
-            'total_status_events': 0,
-            'total_payment_events': 0,
-            'most_frequent_meter': None,
-            'highest_payment': 0,
-            'last_updated': '2024-01-01T23:59:59Z'
-        }
+        logger.info(f"{EVENT_FILE} not found. Creating a new one...")
+        with open(EVENT_FILE, 'w') as f:
+            json.dump({'total_status_events': 0, 
+                       'total_payment_events': 0, 
+                       'most_frequent_meter': None,
+                       'highest_payment': 0, 
+                       'last_updated': '2024-01-01T23:59:59Z'
+                       }, f)
+
 
     # Get current datetime
     received_timestamp = stats["last_updated"]
