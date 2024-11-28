@@ -14,14 +14,9 @@ from starlette.middleware.cors import CORSMiddleware
 import os
 
 # Environment-specific configuration files
-if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
-    print("In Test Environment")
-    app_conf_file = "/config/app_conf.yml"
-    log_conf_file = "/config/log_conf.yml"
-else:
-    print("In Dev Environment")
-    app_conf_file = "app_conf.yml"
-    log_conf_file = "log_conf.yml"
+if "TARGET_ENV" not in os.environ or os.environ["TARGET_ENV"] != "test":
+    CORS(app.app)
+    app.app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Load configuration
 with open(app_conf_file, 'r') as f:
@@ -135,7 +130,7 @@ def get_stats():
 
 # App with CORS middleware
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
+app.add_api("openapi.yml", base_path="/processing", strict_validation=True, validate_responses=True)
 
 app.add_middleware(
     CORSMiddleware,
