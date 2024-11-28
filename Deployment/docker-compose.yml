@@ -130,7 +130,7 @@ services:
       - "storage"
       - "processing"
       - "analyzer"
-      - "dashboard-ui"
+      - "dashboard"
     ports:
       - "80:80"
     networks:
