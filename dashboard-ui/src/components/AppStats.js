@@ -8,7 +8,7 @@ export default function AppStats() {
 
 	const getStats = () => {
 	
-        fetch(`http://acit3855-kafka2.westus.cloudapp.azure.com:8100/parking/stats`)
+        fetch(`http://acit3855-kafka2.westus.cloudapp.azure.com/processing`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Stats")
@@ -51,7 +51,7 @@ export default function AppStats() {
 						</tr>
 					</tbody>
                 </table>
-                <h3>Last Updated: {stats['last_updated']}</h3>
+                <h3>Last Updated: {stats['last_updated']}</h3>:8100/parking/stats
 
             </div>
         )
