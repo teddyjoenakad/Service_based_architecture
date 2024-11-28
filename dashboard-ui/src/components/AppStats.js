@@ -51,7 +51,7 @@ export default function AppStats() {
 						</tr>
 					</tbody>
                 </table>
-                <h3>Last Updated: {stats['last_updated']}</h3>:8100/parking/stats
+                <h3>Last Updated: {stats['last_updated']}</h3>
 
             </div>
         )
