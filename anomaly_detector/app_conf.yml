@@ -1,0 +1,9 @@
+version: 1
+datastore:
+  filename: /data/data.json
+scheduler:
+  period_sec: 10
+events:
+  hostname: acit3855-kafka2.westus.cloudapp.azure.com
+  port: 9092
+  topic: events
