@@ -146,6 +146,7 @@ services:
       - "processing"
       - "analyzer"
       - "dashboard"
+      - "anomalies"
     ports:
       - "80:80"
     networks:
