@@ -3,7 +3,7 @@ import '../App.css';
 
 export default function AnomaliesStats() {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [anomalies, setAnomalies] = useState([]);
+    const [latestAnomaly, setLatestAnomaly] = useState(null);
     const [error, setError] = useState(null);
 
     const getAnomalies = () => {
@@ -12,7 +12,9 @@ export default function AnomaliesStats() {
             .then((result) => {
                 console.log("Received Anomalies");
                 console.log(result);
-                setAnomalies(result);
+                if (result.length > 0) {
+                    setLatestAnomaly(result[result.length - 1]); // Set the latest anomaly
+                }
                 setIsLoaded(true);
             }, (error) => {
                 setError(error);
@@ -29,10 +31,10 @@ export default function AnomaliesStats() {
         return (<div className={"error"}>Error found when fetching from API</div>);
     } else if (isLoaded === false) {
         return (<div>Loading...</div>);
-    } else {
+    } else if (latestAnomaly) {
         return (
             <div>
-                <h1>Latest Anomalies</h1>
+                <h1>Latest Anomaly</h1>
                 <table className={"StatsTable"}>
                     <tbody>
                         <tr>
@@ -43,20 +45,20 @@ export default function AnomaliesStats() {
                             <th>Description</th>
                             <th>Timestamp</th>
                         </tr>
-                        {anomalies.map(anomaly => (
-                            <tr key={anomaly.event_id}>
-                                <td>{anomaly.event_id}</td>
-                                <td>{anomaly.trace_id}</td>
-                                <td>{anomaly.event_type}</td>
-                                <td>{anomaly.anomaly_type}</td>
-                                <td>{anomaly.description}</td>
-                                <td>{anomaly.timestamp}</td>
-                            </tr>
-                        ))}
+                        <tr>
+                            <td>{latestAnomaly.event_id}</td>
+                            <td>{latestAnomaly.trace_id}</td>
+                            <td>{latestAnomaly.event_type}</td>
+                            <td>{latestAnomaly.anomaly_type}</td>
+                            <td>{latestAnomaly.description}</td>
+                            <td>{latestAnomaly.timestamp}</td>
+                        </tr>
                     </tbody>
                 </table>
                 <h3>Last Updated: {new Date().toLocaleString()}</h3>
             </div>
         );
+    } else {
+        return (<div>No anomalies detected.</div>);
     }
 }
