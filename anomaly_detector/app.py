@@ -11,7 +11,6 @@ from starlette.middleware.cors import CORSMiddleware
 import os
 from connexion import NoContent
 
-
 # Load environment-specific configurations
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In Test Environment")
@@ -31,19 +30,21 @@ with open(log_conf_file, 'r') as f2:
 
 logger = logging.getLogger('basicLogger')
 
-logger.info(f"App Conf File: {app_conf_file}")
-logger.info(f"Log Conf File: {log_conf_file}")
-
-# Datastore for anomalies
-EVENT_FILE = app_config["datastore"]["filename"]
-
 def save_anomalies(anomalies):
-    """Save anomalies to the datastore."""
-    with open(EVENT_FILE, 'w') as f:
-        json.dump(anomalies, f, indent=2)
+    data_file = '/data/data.json'
+    if not os.path.exists('/data'):
+        os.makedirs('/data')
+    if not os.path.exists(data_file):
+        with open(data_file, 'w') as f:
+            json.dump([], f)
+
+    with open(data_file, 'r+') as f:
+        data = json.load(f)
+        data.extend(anomalies)
+        f.seek(0)
+        json.dump(data, f)
 
 def get_anomalies():
-    """Process Kafka events and detect anomalies."""
     hostname = f"{app_config['events']['hostname']}:{app_config['events']['port']}"
     client = KafkaClient(hosts=hostname)
     topic = client.topics[str.encode(app_config["events"]["topic"])]
@@ -92,7 +93,7 @@ def get_anomalies():
 
     except Exception as e:
         logger.error(f"Error processing events: {e}")
-        return {"message": "Internal Server Error"}, 500
+        return {"message": "Internal Server Error"}, 500  # Return error message with HTTP status 500
 
 # Scheduler initialization
 def init_scheduler():
