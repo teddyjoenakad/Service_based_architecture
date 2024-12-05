@@ -62,7 +62,7 @@ components:
           type: string
           example: A1234
         trace_id:
-          type: integer
+          type: string
           example: 12345
         event_type:
           type: string
