@@ -63,7 +63,7 @@ def get_anomalies():
             # Payment anomaly: amount > 100
             if event_type == "payment" and payload["amount"] > 100:
                 anomalies.append({
-                    "event_id": payload["meter_id"],
+                    "event_id": str(payload["meter_id"]),
                     "trace_id": payload["trace_id"],
                     "event_type": event_type,
                     "anomaly_type": "Too High",
@@ -74,7 +74,7 @@ def get_anomalies():
             # Parking anomaly: spots < 0
             elif event_type == "parking_status" and payload["spot_number"] < 0:
                 anomalies.append({
-                    "event_id": payload["meter_id"],
+                    "event_id": str(payload["meter_id"]),
                     "trace_id": payload["trace_id"],
                     "event_type": event_type,
                     "anomaly_type": "Too Low",
