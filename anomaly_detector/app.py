@@ -9,6 +9,8 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from connexion.middleware import MiddlewarePosition
 from starlette.middleware.cors import CORSMiddleware
 import os
+from connexion import NoContent
+
 
 # Load environment-specific configurations
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
@@ -75,15 +77,22 @@ def get_anomalies():
                     "trace_id": payload["trace_id"],
                     "event_type": event_type,
                     "anomaly_type": "Too Low",
-                    "description": f"Parking spot {payload['spots']} is below zero",
+                    "description": f"Parking spot {payload['spot_number']} is below zero",
                     "timestamp": payload["timestamp"]
                 })
 
-        save_anomalies(anomalies)
-        logger.info(f"Saved {len(anomalies)} anomalies.")
+        if anomalies:
+            logger.info(f"Anomalies detected: {anomalies}")
+            save_anomalies(anomalies)
+            logger.info(f"Saved {len(anomalies)} anomalies.")
+            return anomalies, 200  # Return anomalies with HTTP status 200
+        else:
+            logger.info("No anomalies detected.")
+            return NoContent, 204  # Return NoContent with HTTP status 204
 
     except Exception as e:
-        logger.error(f"Error processing events: {str(e)}")
+        logger.error(f"Error processing events: {e}")
+        return {"message": "Internal Server Error"}, 500
 
 # Scheduler initialization
 def init_scheduler():
