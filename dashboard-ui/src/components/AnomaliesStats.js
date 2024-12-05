@@ -3,7 +3,8 @@ import '../App.css';
 
 export default function AnomaliesStats() {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [latestAnomaly, setLatestAnomaly] = useState(null);
+    const [latestParkingAnomaly, setLatestParkingAnomaly] = useState(null);
+    const [latestPaymentAnomaly, setLatestPaymentAnomaly] = useState(null);
     const [error, setError] = useState(null);
 
     const getAnomalies = () => {
@@ -12,9 +13,10 @@ export default function AnomaliesStats() {
             .then((result) => {
                 console.log("Received Anomalies");
                 console.log(result);
-                if (result.length > 0) {
-                    setLatestAnomaly(result[result.length - 1]); // Set the latest anomaly
-                }
+                const latestParking = result.filter(anomaly => anomaly.event_type === "parking_status").pop();
+                const latestPayment = result.filter(anomaly => anomaly.event_type === "payment").pop();
+                setLatestParkingAnomaly(latestParking);
+                setLatestPaymentAnomaly(latestPayment);
                 setIsLoaded(true);
             }, (error) => {
                 setError(error);
@@ -31,10 +33,10 @@ export default function AnomaliesStats() {
         return (<div className={"error"}>Error found when fetching from API</div>);
     } else if (isLoaded === false) {
         return (<div>Loading...</div>);
-    } else if (latestAnomaly) {
+    } else {
         return (
             <div>
-                <h1>Latest Anomaly</h1>
+                <h1>Latest Anomalies</h1>
                 <table className={"StatsTable"}>
                     <tbody>
                         <tr>
@@ -45,20 +47,30 @@ export default function AnomaliesStats() {
                             <th>Description</th>
                             <th>Timestamp</th>
                         </tr>
-                        <tr>
-                            <td>{latestAnomaly.event_id}</td>
-                            <td>{latestAnomaly.trace_id}</td>
-                            <td>{latestAnomaly.event_type}</td>
-                            <td>{latestAnomaly.anomaly_type}</td>
-                            <td>{latestAnomaly.description}</td>
-                            <td>{latestAnomaly.timestamp}</td>
-                        </tr>
+                        {latestParkingAnomaly && (
+                            <tr>
+                                <td>{latestParkingAnomaly.event_id}</td>
+                                <td>{latestParkingAnomaly.trace_id}</td>
+                                <td>{latestParkingAnomaly.event_type}</td>
+                                <td>{latestParkingAnomaly.anomaly_type}</td>
+                                <td>{latestParkingAnomaly.description}</td>
+                                <td>{latestParkingAnomaly.timestamp}</td>
+                            </tr>
+                        )}
+                        {latestPaymentAnomaly && (
+                            <tr>
+                                <td>{latestPaymentAnomaly.event_id}</td>
+                                <td>{latestPaymentAnomaly.trace_id}</td>
+                                <td>{latestPaymentAnomaly.event_type}</td>
+                                <td>{latestPaymentAnomaly.anomaly_type}</td>
+                                <td>{latestPaymentAnomaly.description}</td>
+                                <td>{latestPaymentAnomaly.timestamp}</td>
+                            </tr>
+                        )}
                     </tbody>
                 </table>
                 <h3>Last Updated: {new Date().toLocaleString()}</h3>
             </div>
         );
-    } else {
-        return (<div>No anomalies detected.</div>);
     }
 }
