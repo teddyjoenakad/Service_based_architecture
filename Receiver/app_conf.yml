@@ -1,5 +1,5 @@
 version: 1
 events:
-  hostname: acit3855-kafka2.westus.cloudapp.azure.com
+  hostname: kafka-group35.westus.cloudapp.azure.com
   port: 9092
   topic: events
