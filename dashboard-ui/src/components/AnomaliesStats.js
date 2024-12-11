@@ -8,7 +8,7 @@ export default function AnomaliesStats() {
     const [error, setError] = useState(null);
 
     const getAnomalies = () => {
-        fetch(`http://kafka-group35.westus.cloudapp.azure.com/anomalies/anomalies`)
+        fetch(`http://kafka-acit3855.westus.cloudapp.azure.com/anomalies/anomalies`)
             .then(res => res.json())
             .then((result) => {
                 console.log("Received Anomalies");

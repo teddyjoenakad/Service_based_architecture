@@ -8,7 +8,7 @@ export default function AppStats() {
 
 	const getStats = () => {
 	
-        fetch(`http://kafka-group35.westus.cloudapp.azure.com/processing/parking/stats`)
+        fetch(`http://kafka-acit3855.westus.cloudapp.azure.com/processing/parking/stats`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Stats")
