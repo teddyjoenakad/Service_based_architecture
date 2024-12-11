@@ -77,7 +77,7 @@ def payment(body):
     return NoContent, res[1]
 
 def get_check(body):
-    res = log_data(body, "stats")
+    res = log_data(body, "check")
     return NoContent, res[1]
 
 app = connexion.FlaskApp(__name__, specification_dir='')
