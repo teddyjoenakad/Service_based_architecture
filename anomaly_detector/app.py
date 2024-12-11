@@ -1,22 +1,17 @@
 import connexion
-from connexion import NoContent
-from sqlalchemy import and_, create_engine
-from sqlalchemy.orm import sessionmaker
-from base import Base
-from parking_status import ParkingStatus
-from payment import PaymentEvent
-import datetime
-import pymysql
+import json
 import yaml
 import logging
 import logging.config
-import json
 from pykafka import KafkaClient
-from pykafka.common import OffsetType
 from threading import Thread
-import time
+from apscheduler.schedulers.background import BackgroundScheduler
+from connexion.middleware import MiddlewarePosition
+from starlette.middleware.cors import CORSMiddleware
 import os
+from connexion import NoContent
 
+# Load environment-specific configurations
 if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
     print("In Test Environment")
     app_conf_file = "/config/app_conf.yml"
@@ -34,21 +29,6 @@ with open(log_conf_file, 'r') as f2:
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
-
-logger.info("App Conf File: %s" % app_conf_file)
-logger.info("Log Conf File: %s" % log_conf_file)
-
-user = app_config['datastore']['user']
-password = app_config['datastore']['password']
-hostname = app_config['datastore']['hostname']
-port = app_config['datastore']['port']
-db = app_config['datastore']['db']
-
-DB_ENGINE = create_engine(f'mysql+pymysql://{user}:{password}@{hostname}:{port}/{db}', pool_size=0, pool_recycle=-1, pool_pre_ping=True)
-Base.metadata.bind = DB_ENGINE
-DB_SESSION = sessionmaker(bind=DB_ENGINE)
-
-logger.info(f"connecting to DB. Hostname: {hostname}, Port: {port}")
 
 def save_anomalies(anomalies):
     data_file = '/data/data.json'
@@ -97,80 +77,44 @@ def get_anomalies():
                     "event_id": str(payload["meter_id"]),
                     "trace_id": payload["trace_id"],
                     "event_type": event_type,
-                    "anomaly_type": "Invalid Spot Number",
-                    "description": f"Spot number {payload['spot_number']} is less than 0",
+                    "anomaly_type": "Too Low",
+                    "description": f"Parking spot {payload['spot_number']} is below zero",
                     "timestamp": payload["timestamp"]
                 })
+
+        if anomalies:
+            logger.info(f"Anomalies detected: {anomalies}")
+            save_anomalies(anomalies)
+            logger.info(f"Saved {len(anomalies)} anomalies.")
+            return anomalies, 200  # Return anomalies with HTTP status 200
+        else:
+            logger.info("No anomalies detected.")
+            return NoContent, 204  # Return NoContent with HTTP status 204
+
     except Exception as e:
-        logger.error(f"Error processing messages: {str(e)}")
+        logger.error(f"Error processing events: {e}")
+        return {"message": "Internal Server Error"}, 500  # Return error message with HTTP status 500
 
-    save_anomalies(anomalies)
-    return anomalies, 200
-
-def process_messages():
-    """ Process event messages """
-    hostname = "%s:%d" % (app_config["events"]["hostname"], app_config["events"]["port"])
-
-    max_retries = 5
-    retry_count = 0
-
-    while retry_count < max_retries:
-        try:
-            client = KafkaClient(hosts=hostname)
-            topic = client.topics[str.encode(app_config["events"]["topic"])]
-            logger.info(f"Succesfully connected to Kafka")
-            break
-        except Exception as e:
-            logger.error(f"Failed to connect to Kafka: {e} | Retrying in 10 seconds...")
-            time.sleep(5)
-            retry_count += 1        
-
-    consumer = topic.get_simple_consumer(consumer_group=b'event_group', reset_offset_on_start=False, auto_offset_reset=OffsetType.LATEST)
-
-    for msg in consumer:
-        msg_str = msg.value.decode('utf-8')
-        msg = json.loads(msg_str)
-        logger.info("Message: %s" % msg)
-
-        payload = msg["payload"]
-        session = DB_SESSION()
-        try:
-            if msg["type"] == "parking_status":
-                ps = ParkingStatus(
-                    meter_id=payload['meter_id'],
-                    device_id=payload['device_id'],
-                    status=payload['status'],
-                    spot_number=payload['spot_number'],
-                    timestamp=payload['timestamp'],
-                    trace_id=payload['trace_id']
-                )
-                session.add(ps)
-                session.commit()
-                logger.debug(f'Stored event parking_status request with a trace id of {payload["trace_id"]}')
-
-            elif msg["type"] == "payment":
-                pm = PaymentEvent(
-                    meter_id=payload['meter_id'],
-                    device_id=payload['device_id'],
-                    amount=payload['amount'],
-                    duration=payload['duration'],
-                    timestamp=payload['timestamp'],
-                    trace_id=payload['trace_id']
-                )
-                session.add(pm)
-                session.commit()
-                logger.debug(f'Stored event payment request with a trace id of {payload["trace_id"]}')
-        except Exception as e:
-            logger.error(f"Failed to store event: {str(e)}")
-        finally:
-            session.close()
-        consumer.commit_offsets()
+# Scheduler initialization
+def init_scheduler():
+    sched = BackgroundScheduler(daemon=True)
+    sched.add_job(get_anomalies, 'interval', seconds=app_config['scheduler']['period_sec'])
+    sched.start()
 
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_api("openapi.yml", base_path="/storage", strict_validation=True, validate_responses=True)
+app.add_api("openapi.yml", base_path="/anomalies", strict_validation=True, validate_responses=True)
+
+# Enable CORS if not in test environment
+if "TARGET_ENV" not in os.environ or os.environ["TARGET_ENV"] != "test":
+    app.add_middleware(
+        CORSMiddleware,
+        position=MiddlewarePosition.BEFORE_EXCEPTION,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
 if __name__ == "__main__":
-    t1 = Thread(target=process_messages)
-    t1.setDaemon(True)
-    t1.start()
-    app.run(port=8090, host="0.0.0.0")
+    init_scheduler()
+    app.run(port=8120, host="0.0.0.0")
