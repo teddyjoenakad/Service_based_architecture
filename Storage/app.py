@@ -157,16 +157,24 @@ def process_messages():
 def get_event_stats():
     session = DB_SESSION()
 
-    num_parking_status = session.query(ParkingStatus).count()
-    num_payment_events = session.query(PaymentEvent).count()
+    try:
+        num_parking_events = session.query(ParkingStatus).count()
+        num_payment_events = session.query(PaymentEvent).count()
 
-    stats = {
-        "num_parking_status": num_parking_status,
-        "num_payment_events": num_payment_events
-    }
+        stats = {
+            "num_parking_events": num_parking_events,
+            "num_payment_events": num_payment_events
+        }
 
-    logger.info(f"Stats retrieved: {stats}")
-    return stats, 200
+        logger.info(f"Stats retrieved: {stats}")
+        return stats, 200
+
+    except Exception as e:
+        logger.error(f"Error retrieving stats: {e}")
+        return {"message": "Error retrieving stats"}, 500
+
+    finally:
+        session.close()
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')
