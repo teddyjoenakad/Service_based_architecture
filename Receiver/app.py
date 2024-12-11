@@ -76,9 +76,10 @@ def payment(body):
     res = log_data(body, "payment")
     return NoContent, res[1]
 
-def get_check(body):
-    res = log_data(body, "check")
-    return NoContent, res[1]
+def get_check():
+    logger.info("Health check endpoint hit.")
+    return {"message": "Service is healthy"}, 200
+
 
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", base_path="/receiver", strict_validation=True, validate_responses=True)
