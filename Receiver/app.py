@@ -78,7 +78,7 @@ def payment(body):
 
 def get_check():
     logger.info("Health check endpoint hit.")
-    return {"message": "Service is healthy"}, 200
+    return NoContent, 200
 
 
 app = connexion.FlaskApp(__name__, specification_dir='')

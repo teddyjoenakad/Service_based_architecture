@@ -9,15 +9,8 @@ import logging.config
 from apscheduler.schedulers.background import BackgroundScheduler
 import os
 
-# Load environment-specific configuration files
-if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
-    print("In Test Environment")
-    app_conf_file = "/config/app_conf.yml"
-    log_conf_file = "/config/log_conf.yml"
-else:
-    print("In Dev Environment")
-    app_conf_file = "app_conf.yml"
-    log_conf_file = "log_conf.yml"
+app_conf_file = "app_conf.yml"
+log_conf_file = "log_conf.yml"
 
 # Load configuration
 with open(app_conf_file, 'r') as f:
@@ -28,9 +21,6 @@ with open(log_conf_file, 'r') as f:
     logging.config.dictConfig(log_config)
 
 logger = logging.getLogger('basicLogger')
-
-logger.info("App Conf File: %s" % app_conf_file)
-logger.info("Log Conf File: %s" % log_conf_file)
 
 # Constants from config
 RECEIVER_URL = app_config["services"]["receiver_url"]
@@ -71,7 +61,7 @@ def check_services():
         response = requests.get(STORAGE_URL, timeout=TIMEOUT)
         if response.status_code == 200:
             storage_json = response.json()
-            storage_status = f"Storage has {storage_json['num_bp']} BP and {storage_json['num_hr']} HR events"
+            storage_status = f"Storage has {storage_json['num_parking_events']} parking and {storage_json['num_payment_events']} payment events"
             logger.info("Storage is Healthy")
         else:
             logger.info("Storage returned non-200 response")
@@ -85,7 +75,7 @@ def check_services():
         response = requests.get(PROCESSING_URL, timeout=TIMEOUT)
         if response.status_code == 200:
             processing_json = response.json()
-            processing_status = f"Processing has {processing_json['num_bp']} BP and {processing_json['num_hr']} HR events"
+            processing_status = f"Processing has {processing_json['num_parking_events']} parking and {processing_json['num_payment_events']} payment events"
             logger.info("Processing is Healthy")
         else:
             logger.info("Processing returned non-200 response")
@@ -99,7 +89,7 @@ def check_services():
         response = requests.get(ANALYZER_URL, timeout=TIMEOUT)
         if response.status_code == 200:
             analyzer_json = response.json()
-            analyzer_status = f"Analyzer has {analyzer_json['num_bp']} BP and {analyzer_json['num_hr']} HR events"
+            analyzer_status = f"Analyzer has {analyzer_json['parking']} parking and {analyzer_json['payment']} payment events"
             logger.info("Analyzer is Healthy")
         else:
             logger.info("Analyzer returned non-200 response")
@@ -112,9 +102,6 @@ def check_services():
         json.dump(status, f, indent=2)
 
     logger.info("Service check completed and status.json updated")
-
-def get_status():
-    """Return the status of services"""
     logger.info("Request received to get service status...")
 
     if os.path.isfile(STATUS_FILE):
@@ -133,8 +120,8 @@ def init_scheduler():
 
 # App setup
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_api("openapi.yml", base_path="/check", strict_validation=True, validate_responses=True)
+app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
 
 if __name__ == "__main__":
     init_scheduler()
-    app.run(port=8130, host="0.0.0.0")
+    app.run(port=8130, host="127.0.0.1")

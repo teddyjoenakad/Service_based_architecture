@@ -1,0 +1,10 @@
+version: 1
+datastore:
+  filename: /data/data.json
+services:
+  receiver_url: http://kafka-acit3855.westus.cloudapp.azure.com/receiver/check
+  storage_url: http://kafka-acit3855.westus.cloudapp.azure.com/storage/stats
+  processing_url: http://kafka-acit3855.westus.cloudapp.azure.com/processing
+  analyzer_url: http://kafka-acit3855.westus.cloudapp.azure.com/analyzer
+  timeout: 2
+  status_file: status.json
