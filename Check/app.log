@@ -1249,3 +1249,941 @@
 2024-12-11 12:08:30,378 - basicLogger - INFO - Analyzer returned non-200 response
 2024-12-11 12:08:30,380 - basicLogger - INFO - Service check completed and status.json updated
 2024-12-11 12:08:30,380 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:20,773 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:20,975 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:21,183 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:21,488 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:21,695 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:21,696 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:21,697 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:22,312 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:22,397 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:22,497 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:22,597 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:22,598 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:22,599 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:27,425 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:27,630 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:27,938 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:28,147 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:28,148 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:28,149 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:32,443 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:32,648 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:32,955 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:33,165 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:33,166 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:33,166 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:37,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:37,388 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:37,564 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:37,872 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:38,075 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:38,076 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:38,076 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:42,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:42,581 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:42,786 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:43,096 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:43,400 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:43,401 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:43,402 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:47,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:47,451 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:47,598 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:47,804 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:48,008 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:48,009 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:48,009 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:52,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:52,411 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:52,616 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:52,824 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:53,025 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:53,026 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:53,026 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:12:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:12:57,531 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:12:57,735 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:12:58,044 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:12:58,350 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:12:58,351 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:12:58,351 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:02,445 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:02,651 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:02,959 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:03,169 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:03,170 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:03,170 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:07,464 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:07,669 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:07,977 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:08,283 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:08,284 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:08,284 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:12,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:12,481 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:12,805 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:13,099 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:13,403 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:13,404 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:13,404 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:17,329 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:17,434 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:17,709 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:17,908 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:17,910 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:17,910 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:22,518 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:22,721 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:23,137 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:23,438 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:23,439 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:23,440 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:27,431 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:27,637 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:27,943 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:28,148 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:28,149 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:28,150 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:32,449 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:32,653 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:32,960 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:33,165 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:33,166 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:33,167 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:37,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:37,466 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:37,670 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:37,978 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:38,286 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:38,287 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:38,287 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:42,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:42,484 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:42,688 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:42,996 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:43,210 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:43,212 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:43,212 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:47,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:47,399 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:47,604 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:47,911 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:48,117 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:48,118 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:48,118 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:52,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:52,416 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:52,621 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:52,931 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:53,133 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:53,134 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:53,134 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:13:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:13:57,434 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:13:57,639 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:13:57,949 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:13:58,151 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:13:58,152 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:13:58,153 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:02,384 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:02,458 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:02,768 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:02,964 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:02,965 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:02,966 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:07,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:07,468 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:07,674 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:07,981 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:08,186 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:08,187 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:08,188 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:12,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:12,589 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:12,794 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:13,101 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:13,307 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:13,308 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:13,308 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:17,335 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:17,411 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:17,672 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:17,767 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:17,771 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:17,771 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:22,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:22,398 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:22,478 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:22,728 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:22,841 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:22,842 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:22,842 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:27,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:27,448 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:27,642 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:27,932 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:28,101 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:28,102 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:28,102 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:32,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:32,461 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:32,658 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:32,864 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:33,068 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:33,069 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:33,070 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:37,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:37,472 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:37,677 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:37,987 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:38,189 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:38,190 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:38,190 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:42,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:42,592 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:42,797 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:43,104 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:43,315 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:43,318 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:43,318 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:47,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:47,344 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:47,453 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:47,717 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:47,917 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:47,917 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:47,918 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:52,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:52,524 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:52,730 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:53,037 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:53,246 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:53,247 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:53,248 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:14:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:14:57,439 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:14:57,645 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:14:57,895 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:14:58,165 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:14:58,183 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:14:58,187 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:02,407 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:02,483 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:02,719 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:02,821 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:02,822 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:02,822 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:07,434 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:07,516 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:07,727 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:07,824 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:07,826 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:07,826 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:12,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:12,492 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:12,697 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:12,880 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:13,107 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:13,108 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:13,108 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:17,407 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:17,613 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:17,920 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:18,124 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:18,125 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:18,126 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:22,425 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:22,630 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:22,938 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:23,143 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:23,144 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:23,144 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:27,443 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:27,648 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:27,955 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:28,161 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:28,162 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:28,162 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:32,461 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:32,564 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:32,870 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:33,075 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:33,076 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:33,076 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:37,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:37,478 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:37,681 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:37,989 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:38,196 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:38,197 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:38,198 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:42,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:42,495 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:42,803 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:43,111 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:43,321 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:43,322 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:43,323 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:47,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:47,411 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:47,614 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:47,922 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:48,063 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:48,064 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:48,065 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:52,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:52,427 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:52,632 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:52,940 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:53,144 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:53,145 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:53,145 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:15:57,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:15:57,445 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:15:57,650 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:15:57,958 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:15:58,163 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:15:58,164 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:15:58,164 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:02,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:02,874 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:03,179 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:03,487 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:03,691 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:03,692 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:03,692 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:07,480 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:07,685 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:07,993 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:08,197 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:08,198 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:08,198 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:12,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:12,395 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:12,600 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:12,908 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:13,112 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:13,113 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:13,113 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:17,412 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:17,568 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:17,823 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:18,027 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:18,029 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:18,029 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:22,430 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:22,635 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:22,839 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:22,988 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:22,988 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:22,989 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:27,449 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:27,654 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:27,961 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:28,165 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:28,167 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:28,167 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:32,465 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:32,671 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:32,978 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:33,183 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:33,184 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:33,184 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:37,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:37,403 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:37,479 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:37,657 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:37,755 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:37,756 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:37,756 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:42,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:42,311 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:42,388 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:42,483 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:42,580 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:42,581 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:42,581 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:47,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:47,335 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:47,410 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:47,507 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:47,608 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:47,609 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:47,610 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:52,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:52,368 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:52,535 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:52,843 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:52,953 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:52,954 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:52,954 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:16:57,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:16:57,451 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:16:57,656 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:16:58,065 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:16:58,475 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:16:58,476 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:16:58,476 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:02,403 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:02,483 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:02,718 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:02,818 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:02,819 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:02,819 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:07,452 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:07,530 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:07,760 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:07,861 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:07,862 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:07,863 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:12,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:12,608 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:12,813 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:13,119 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:13,329 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:13,330 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:13,330 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:17,356 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:17,439 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:17,687 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:17,786 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:17,788 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:17,789 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:22,387 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:22,463 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:22,716 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:22,822 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:22,823 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:22,824 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:27,455 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:27,761 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:28,083 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:28,274 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:28,275 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:28,275 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:32,471 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:32,677 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:32,984 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:33,188 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:33,189 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:33,190 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:37,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:37,591 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:37,796 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:38,104 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:38,309 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:38,310 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:38,311 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:42,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:42,506 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:42,711 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:43,021 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:43,223 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:43,225 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:43,225 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:47,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:47,430 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:47,729 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:48,036 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:48,241 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:48,242 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:48,243 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:52,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:52,527 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:52,746 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:53,040 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:53,258 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:53,269 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:53,269 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:17:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:17:57,499 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:17:57,576 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:17:57,831 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:17:57,928 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:17:57,929 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:17:57,930 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:02,355 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:02,434 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:02,672 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:02,774 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:02,775 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:02,776 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:07,493 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:07,698 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:08,004 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:08,209 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:08,210 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:08,210 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:12,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:12,509 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:12,715 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:13,021 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:13,227 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:13,227 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:13,228 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:17,430 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:17,630 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:17,936 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:18,248 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:18,249 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:18,249 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:22,447 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:22,648 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:22,955 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:23,261 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:23,261 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:23,262 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:27,563 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:27,870 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:28,279 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:28,484 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:28,485 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:28,486 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:32,459 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:32,538 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:32,796 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:32,899 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:32,900 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:32,901 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:37,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:37,361 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:37,447 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:37,671 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:37,772 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:37,773 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:37,774 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:42,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:42,513 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:42,717 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:43,025 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:43,231 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:43,233 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:43,234 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:47,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:47,529 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:47,736 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:47,976 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:48,458 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:48,458 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:48,459 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:52,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:52,547 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:52,753 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:53,060 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:53,367 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:53,368 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:53,368 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:18:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:18:57,483 - basicLogger - INFO - Receiver is Healthy
+2024-12-11 12:18:57,770 - basicLogger - INFO - Storage is Healthy
+2024-12-11 12:18:58,014 - basicLogger - INFO - Processing returned non-200 response
+2024-12-11 12:18:58,138 - basicLogger - INFO - Analyzer returned non-200 response
+2024-12-11 12:18:58,140 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:18:58,142 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:02,377 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:02,484 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:02,581 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:02,683 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:02,686 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:02,686 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:07,021 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:07,054 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:07,090 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:07,124 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:07,160 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:07,161 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:07,162 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:07,276 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:07,312 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:07,354 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:07,387 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:07,389 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:07,389 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:12,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:12,276 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:12,312 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:12,347 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:12,382 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:12,383 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:12,383 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:17,286 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:17,319 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:17,353 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:17,391 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:17,392 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:17,392 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:22,344 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:22,452 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:22,549 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:22,754 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:22,755 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:22,755 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:27,361 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:27,477 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:27,669 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:27,874 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:27,875 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:27,875 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:32,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:32,379 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:32,686 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:32,789 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:32,891 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:32,892 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:32,892 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:37,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:37,294 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:37,396 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:37,512 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:37,705 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:37,706 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:37,706 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:42,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:42,312 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:42,414 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:42,521 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:42,619 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:42,621 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:42,621 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:47,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:47,436 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:47,534 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:47,637 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:47,739 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:47,740 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:47,741 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:52,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:52,282 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:52,318 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:52,354 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:52,391 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:52,392 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:52,393 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:19:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:19:57,291 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:19:57,330 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:19:57,472 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:19:57,520 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:19:57,521 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:19:57,522 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:02,382 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:02,489 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:02,587 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:02,689 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:02,691 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:02,691 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:07,278 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:07,555 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:07,592 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:07,810 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:07,811 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:07,811 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:12,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:12,315 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:12,418 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:12,531 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:12,724 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:12,725 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:12,725 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:17,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:17,333 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:17,434 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:17,641 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:17,744 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:17,746 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:17,746 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:22,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:22,462 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:22,557 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:22,658 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:22,760 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:22,761 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:22,761 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:27,367 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:27,486 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:27,572 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:27,675 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:27,676 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:27,676 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:32,385 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:32,494 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:32,589 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:32,691 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:32,692 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:32,693 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:37,243 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:37,301 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:37,402 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:37,461 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:37,608 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:37,609 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:37,609 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:42,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:42,317 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:42,421 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:42,530 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:42,575 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:42,576 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:42,576 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:47,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:47,335 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:47,545 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:47,643 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:47,745 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:47,746 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:47,746 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:52,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:52,354 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:52,455 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:52,673 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:52,720 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:52,721 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:52,722 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:20:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:20:57,370 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:20:57,473 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:20:57,575 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:20:57,780 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:20:57,781 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:20:57,781 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:02,313 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:02,388 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:02,495 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:02,593 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:02,594 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:02,594 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:07,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:07,303 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:07,406 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:07,610 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:07,712 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:07,713 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:07,713 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:12,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:12,321 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:12,423 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:12,531 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:12,631 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:12,632 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:12,632 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:17,412 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:17,474 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:17,515 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:17,717 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:17,719 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:17,719 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:22,356 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:22,458 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:22,566 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:22,663 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:22,664 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:22,664 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:27,313 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:27,351 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:27,387 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:27,426 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:27,427 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:27,427 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:32,404 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:32,446 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:32,483 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:32,683 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:32,684 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:32,684 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:37,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:37,307 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:37,410 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:37,510 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:37,613 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:37,614 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:37,615 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:42,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:42,324 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:42,542 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:42,631 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:42,733 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:42,734 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:42,734 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:47,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:47,443 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:47,551 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:47,648 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:47,751 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:47,752 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:47,752 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:52,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:52,395 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:52,461 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:52,507 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:52,568 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:52,569 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:52,569 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:21:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:21:57,376 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:21:57,413 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:21:57,479 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:21:57,586 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:21:57,587 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:21:57,587 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:02,394 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:02,496 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:02,603 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:02,702 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:02,704 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:02,705 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:07,244 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:07,309 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:07,411 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:07,514 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:07,719 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:07,721 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:07,723 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:12,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:12,327 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:12,429 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:12,531 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:12,651 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:12,652 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:12,652 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:17,344 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:17,381 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:17,447 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:17,503 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:17,504 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:17,504 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:22,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:22,362 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:22,463 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:22,573 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:22,668 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:22,669 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:22,670 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:27,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:27,380 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:27,482 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:27,686 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:27,789 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:27,790 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:27,790 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:32,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:32,343 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:32,397 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:32,499 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:32,709 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:32,710 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:32,710 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:37,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:37,294 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:37,357 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:37,408 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:37,450 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:37,451 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:37,452 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:42,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:42,329 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:42,432 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:42,544 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:42,739 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:42,740 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:42,741 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:47,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:47,346 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:47,449 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:47,552 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:47,661 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:47,662 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:47,662 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:52,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:52,364 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:52,521 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:52,571 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:52,775 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:52,775 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:52,776 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:22:57,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:22:57,382 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:22:57,485 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:22:57,591 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:22:57,689 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:22:57,691 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:22:57,691 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:23:02,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:23:02,400 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:23:02,503 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:23:02,609 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:23:02,707 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:23:02,708 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:23:02,708 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:23:07,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:23:07,315 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:23:07,418 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:23:07,520 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:23:07,724 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:23:07,725 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:23:07,726 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:23:12,241 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:23:12,333 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:23:12,434 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:23:12,538 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:23:12,657 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:23:12,658 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:23:12,659 - basicLogger - INFO - Request received to get service status...
+2024-12-11 12:23:17,242 - basicLogger - INFO - Periodic service check started...
+2024-12-11 12:23:17,350 - basicLogger - INFO - Receiver is Not Available
+2024-12-11 12:23:17,391 - basicLogger - INFO - Storage is Not Available
+2024-12-11 12:23:17,452 - basicLogger - INFO - Processing is Not Available
+2024-12-11 12:23:17,555 - basicLogger - INFO - Analyzer is Not Available
+2024-12-11 12:23:17,556 - basicLogger - INFO - Service check completed and status.json updated
+2024-12-11 12:23:17,556 - basicLogger - INFO - Request received to get service status...

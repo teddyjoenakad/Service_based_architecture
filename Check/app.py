@@ -7,10 +7,19 @@ import json
 import logging
 import logging.config
 from apscheduler.schedulers.background import BackgroundScheduler
+from connexion.middleware import MiddlewarePosition
+from starlette.middleware.cors import CORSMiddleware
 import os
 
-app_conf_file = "app_conf.yml"
-log_conf_file = "log_conf.yml"
+# Environment-specific configuration files
+if "TARGET_ENV" in os.environ and os.environ["TARGET_ENV"] == "test":
+    print("In Test Environment")
+    app_conf_file = "/config/app_conf.yml"
+    log_conf_file = "/config/log_conf.yml"
+else:
+    print("In Dev Environment")
+    app_conf_file = "app_conf.yml"
+    log_conf_file = "log_conf.yml"
 
 # Load configuration
 with open(app_conf_file, 'r') as f:
@@ -120,7 +129,18 @@ def init_scheduler():
 
 # App setup
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
+app.add_api("openapi.yml", base_path="/processing", strict_validation=True, validate_responses=True)
+
+# Disable CORS in the test environment
+if "TARGET_ENV" not in os.environ or os.environ["TARGET_ENV"] != "test":
+    app.add_middleware(
+        CORSMiddleware,
+        position=MiddlewarePosition.BEFORE_EXCEPTION,
+        allow_origins=["*"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
 if __name__ == "__main__":
     init_scheduler()
