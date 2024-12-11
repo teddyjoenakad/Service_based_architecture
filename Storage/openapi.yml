@@ -172,6 +172,20 @@ paths:
                   message:
                     type: string
                     example: Invalid request message
+    
+  /stats:
+    get:
+      summary: Retrieves event statistics
+      operationId: app.get_event_stats
+      description: Returns the statistics for parking and payment events
+      responses:
+        '200':
+          description: Successfully returned event statistics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventStats'
+
 
 components:
   schemas:
@@ -240,3 +254,18 @@ components:
         trace_id:
           type: string
           example: '123e4567-e89b-12d3-a456-426614174000'
+
+    EventStats:
+      type: object
+      required:
+        - num_parking_events
+        - num_payment_events
+      properties:
+        num_parking_events:
+          type: integer
+          example: 150
+          description: Total number of parking events
+        num_payment_events:
+          type: integer
+          example: 75
+          description: Total number of payment events

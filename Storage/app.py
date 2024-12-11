@@ -153,6 +153,23 @@ def process_messages():
             session.close()
         consumer.commit_offsets()
 
+# get stats
+def get_event_stats():
+    session = DB_SESSION()
+
+    num_parking = session.query(ParkingStatus).count()
+    num_payment = session.query(PaymentEvent).count()
+
+    session.close()
+
+    stats = {
+        "num_parking": num_parking,
+        "num_payment": num_payment
+    }
+
+    return stats, 200
+    
+
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", base_path="/storage", strict_validation=True, validate_responses=True)
 
