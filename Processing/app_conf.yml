@@ -4,5 +4,5 @@ datastore:
 scheduler:
   period_sec: 5
 eventstore:
-  parking: http://localhost:8090/parking
-  payment: http://localhost:8090/payment
+  parking: http://kafka-acit3855.westus.cloudapp.azure.com/parking
+  payment: http://kafka-acit3855.westus.cloudapp.azure.com/payment

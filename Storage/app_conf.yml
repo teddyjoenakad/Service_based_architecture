@@ -2,10 +2,10 @@ version: 1
 datastore:
   user: user
   password: password
-  hostname: kafka-group35.westus.cloudapp.azure.com
+  hostname: kafka-acit3855.westus.cloudapp.azure.com
   port: 3306
   db: events
 events:
-  hostname: kafka-group35.westus.cloudapp.azure.com
+  hostname: kafka-acit3855.westus.cloudapp.azure.com
   port: 9092
   topic: events
